@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:test_task/Presentation/logic/color_cubit/color_generator_cubit.dart';
 import 'package:test_task/Presentation/logic/color_cubit/color_generator_states.dart';
 
-///screen to display text "Hello there" in the middle of the screen
+/// clickable screen to display text "Hello there" in the middle of the screen
 class ColorGeneratorScreen extends StatelessWidget {
 
   /// Constructor calling super
