@@ -35,28 +35,32 @@ class ColorPickerWidget extends StatelessWidget {
         ),
 
         ///color picker
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: pickedColors
-              .map(
-                (e) => InkWell(
-                  onTap: () {
-                    onColorTab(e);
-                  },
-                  child: Container(
-                    width: AppConstance.colorRadius,
-                    height: AppConstance.colorRadius,
-                    margin: const EdgeInsets.all(
-                      AppConstance.smallPagePadding,
-                    ),
-                    decoration: BoxDecoration(
-                      color: e,
-                      shape: BoxShape.circle,
+        SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: pickedColors
+                .map(
+                  (e) => InkWell(
+                    onTap: () {
+                      onColorTab(e);
+                    },
+                    child: Container(
+                      width: AppConstance.colorRadius,
+                      height: AppConstance.colorRadius,
+                      margin: const EdgeInsets.all(
+                        AppConstance.smallPagePadding,
+                      ),
+                      decoration: BoxDecoration(
+                        color: e,
+                        shape: BoxShape.circle,
+                      ),
                     ),
                   ),
-                ),
-              )
-              .toList(),
+                )
+                .toList(),
+          ),
         )
       ],
     );
