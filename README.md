@@ -1,5 +1,8 @@
 # Color Generator task
 
-Flutter task that chage background genrated color of Container.
+Flutter task that change background generated color of screen.
 
-This project is a test task for Solid.software company.
+## bounce feature 
+*(color picker) long press to see the magic
+
+### This project is a test task for Solid.software company.
